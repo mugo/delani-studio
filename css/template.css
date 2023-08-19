@@ -53,7 +53,7 @@ h2 {
 
 .about,.services,
 .what,.portfolio,
-.contact, .experience {
+.contact, .experience, .footer {
   padding: 40px;
   min-height: 330px;
   text-align: center;
@@ -190,7 +190,7 @@ header hr {
   border-radius: 0px;
   height: 4px;
 }
-.services .progress .progress-bar-primary {
+.services .progress {
   background: #204090;
 }
 .services strong {
@@ -258,15 +258,34 @@ header hr {
 
 /* footer section */
 footer {
-  color: #f9f9f9;
+  color: #f5f5f5;
+  background-image: url("../images/backgrounds/s_image.jpg");
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  align-items: center;
+  align-content: center;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
+}
+.footer .progress {
+  border-radius: 0px;
+  height: 4px;
+}
+.footer {
+  background: #202020;
+}
+.footer strong {
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer .footer-text {
+  color:#FFFFFF;
 }
 
 /* social icon section */
 .social-icons {
-  padding: 0;
+  padding-top: 30px;
   margin: 0;
 }
 .social-icons li {
@@ -279,8 +298,8 @@ footer {
   /* color: #fff; */
   text-decoration: none;
   font-size: 18px;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   line-height: 40px;
   text-align: center;
   transition: all 0.4s ease-in;
@@ -289,12 +308,12 @@ footer {
   /* top: 10px; */
 }
 .social-icons li a:hover {
-  background: #202020;
+  background: #ffffff;
   color: #fff;
 }
 
 @media ( max-width: 980px ) {
-  .services {
+  .services, .footer {
     margin-top: 30px;
   }
 }
